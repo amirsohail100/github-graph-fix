@@ -35,3 +35,24 @@ The script relies on Python's built-in `subprocess` module to interact directly 
 2. For every day within your chosen date range, it generates a random number of commits between your specified bounds.
 3. It appends a timestamp string to the file, stages it using `git add`, and executes `git commit` while injecting custom environment variables for the commit date.
 4. Finally, it triggers a background push to your remote repository.
+
+## 📋 Prerequisites
+
+Make sure you have the following installed on your machine before running the script:
+
+- **Python 3.x** (Download from [python.org](https://www.python.org/))
+- **Git** installed and configured with your GitHub account credentials (SSH keys or Personal Access Token set up for pushing).
+
+---
+
+## 🚀 Installation & Setup Guide
+
+If you want to use this tool on your own PC, follow these simple terminal/command line steps:
+
+### Step 1: Clone the Repository
+
+Open your terminal (Git Bash, Command Prompt, or VS Code terminal) and run the following command to clone this repository to your local machine:
+
+```bash
+git clone [https://github.com/amirsohail100/github-graph-fix.git](https://github.com/amirsohail100/github-graph-fix.git)
+```
