@@ -69,3 +69,28 @@ When you run `main.py`, the interactive command-line interface will prompt you f
    - _What to fill:_ Enter dates strictly in `YYYY-MM-DD` format (e.g., `2026-07-01`). If left blank, it defaults to today's date.
 4. **Minimum & Maximum commits per day:**
    - _What to fill:_ Enter non-negative integers. For example, setting Min to `2` and Max to `5` will make a random count between 2 and 5 commits for every active day in your date range.
+
+## 🛡️ Safety Checks & Error Handling
+
+The script includes built-in validation checks to prevent common user configuration mistakes:
+
+- **Date Validation:** If your `Start Date` is chronologically after your `End Date`, the script aborts immediately with an error message.
+- **Range Validation:** If your `Minimum Commits` exceed your `Maximum Commits`, execution halts to avoid unexpected loops.
+- **Directory Verification:** Ensures the target repository path actually exists on your local disk before writing files.
+
+---
+
+## 💡 Troubleshooting Tips
+
+- **Authentication Errors during Push:** Ensure your local Git client is authenticated with GitHub via a Personal Access Token (PAT) or SSH key, since the script runs a direct `git push origin main`.
+- **Empty Graph?** Remember that GitHub contribution graphs typically display public repository commits, or private commits if your profile settings allow counting private contributions. Give GitHub a few minutes to re-index your activity graph after the push completes.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE). Feel free to modify and adapt it to your workflow needs.
+
+---
+
+_Built with ❤️ by Amir Sohail_
