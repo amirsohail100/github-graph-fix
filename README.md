@@ -56,3 +56,16 @@ Open your terminal (Git Bash, Command Prompt, or VS Code terminal) and run the f
 ```bash
 git clone [https://github.com/amirsohail100/github-graph-fix.git](https://github.com/amirsohail100/github-graph-fix.git)
 ```
+
+## 🎛️ User Input Configuration Guide
+
+When you run `main.py`, the interactive command-line interface will prompt you for several parameters. Here is what you need to enter:
+
+1. **Path to your local git repository:**
+   - _What to fill:_ Enter the absolute or relative path of the Git repository where you want the commits to be injected. Press `Enter` to use the current directory (`.`).
+2. **Filename to modify for commits:**
+   - _What to fill:_ The name of the file that will receive dummy text lines for each commit. Default is `data.txt`.
+3. **Start Date & End Date:**
+   - _What to fill:_ Enter dates strictly in `YYYY-MM-DD` format (e.g., `2026-07-01`). If left blank, it defaults to today's date.
+4. **Minimum & Maximum commits per day:**
+   - _What to fill:_ Enter non-negative integers. For example, setting Min to `2` and Max to `5` will make a random count between 2 and 5 commits for every active day in your date range.
