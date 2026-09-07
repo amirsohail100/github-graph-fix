@@ -45,6 +45,25 @@ Make sure you have the following installed on your machine before running the sc
 
 ---
 
+## 📸 Screenshots / Preview
+
+### 1. Initial Setup & Repository Path Configuration
+
+When you run the script, it prompts you to enter your local git repository path and target filename:
+![Terminal Step 1](assets/terminal-step1-repo-config.png)
+
+### 2. Date Range & Commit Density Configuration
+
+Next, it asks for your custom start/end dates and the minimum/maximum commits per day:
+![Terminal Step 2](assets/terminal-step2-date-range.png)
+
+### 3. Resulting GitHub Contribution Graph
+
+After running the script and pushing to your remote repository, your GitHub contribution graph reflects natural, randomized activity:
+![GitHub Contribution Graph Result](assets/github-contribution-graph-result.png)
+
+---
+
 ## 🚀 Installation & Setup Guide
 
 If you want to use this tool on your own PC, follow these simple terminal/command line steps:
